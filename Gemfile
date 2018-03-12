@@ -41,10 +41,15 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'rspec'
-  gem 'guard'
+  gem 'rspec-expectations', '~> 3.7.0'
+  gem 'rspec-rails', '~> 3.7.0'
+  gem 'rspec-mocks', '~> 3.7.0'
   gem 'guard-rspec'
   gem 'zeus'
+  gem 'simplecov', require: false, group: :test
+  gem 'vcr'
+  gem 'webmock'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 group :development do
