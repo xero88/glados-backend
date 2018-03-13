@@ -17,5 +17,6 @@ module GladosBackend
 
     # add custom directories
     Dir[ Rails.root.join('app', 'entities', '**/') ]
+    Dir[ Rails.root.join('app', 'events', '**/') ]
   end
 end
