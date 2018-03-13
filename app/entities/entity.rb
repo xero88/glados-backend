@@ -1,6 +1,6 @@
 class Entity
   include ActiveModel::Model
-  include ActiveModelAttributes
+  include Virtus.model
 
   def initialize(*args)
     super

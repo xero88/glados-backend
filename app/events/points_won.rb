@@ -1,5 +1,5 @@
 class PointsWon < Entity
-  attribute :points, :integer
+  attribute :points, Integer
 
   validates :points, numericality: { only_integer: true }
   validate :points_gtr_than_0
