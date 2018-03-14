@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'virtus'
+gem 'rails_event_store'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,6 +51,8 @@ group :development, :test do
   gem 'vcr'
   gem 'webmock'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'rails_event_store-rspec'
+  gem 'database_cleaner'
 end
 
 group :development do
